@@ -3,7 +3,7 @@ from typing import List
 import string
 
 class Trader:
-    
+    #hi
     def run(self, state: TradingState):
         print("traderData: " + state.traderData)
         print("Observations: " + str(state.observations))
