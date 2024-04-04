@@ -9,6 +9,8 @@ class Trader:
 
 
     def run(self, state: TradingState):
+        #TEST IN BRANCH
+
         # Only method required. It takes all buy and sell orders for all symbols as an input, and outputs a list of orders to be sent
         print("traderData: " + state.traderData)
         print("Observations: " + str(state.observations))
