@@ -1,9 +1,13 @@
 from datamodel import OrderDepth, UserId, TradingState, Order
 from typing import List
 import string
+import pandas as pd
+import numpy as np
 
 class Trader:
     
+
+
     def run(self, state: TradingState):
         # Only method required. It takes all buy and sell orders for all symbols as an input, and outputs a list of orders to be sent
         print("traderData: " + state.traderData)
@@ -35,3 +39,6 @@ class Trader:
         
         conversions = 1
         return result, conversions, traderData
+
+
+tutorialCSV = pd.read_csv("IMC Prosperity/csvs/tutorialData.csv", delimiter = ";")
