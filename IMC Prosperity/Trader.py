@@ -34,6 +34,10 @@ class Trader:
                     if int(best_bid) > acceptable_price:
                         print("SELL", str(best_bid_amount) + "x", best_bid)
                         orders.append(Order(product, best_bid, -best_bid_amount))
+            
+            if product == "STARFRUIT":
+                order_depth: OrderDepth = state.order_depths[product]
+                orders: List[Order] = []
                 
                 result[product] = orders
     
